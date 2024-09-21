@@ -18,4 +18,5 @@ jobs:
       - name: Print PRIVATEDATA (will be redacted in logs)
         env:
           PRIVATEDATA: ${{ secrets.PRIVATEDATA }}
-        run: echo "Secret: $PRIVATEDATA"
+        run: |
+          echo "Secret: $PRIVATEDATA"
